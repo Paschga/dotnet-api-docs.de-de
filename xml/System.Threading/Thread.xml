@@ -3262,7 +3262,7 @@ Wichtig: Für teilweise vertrauenswürdigen Code wird <paramref name="maxStackSi
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Die <xref:System.Threading.Thread.SpinWait%2A> Methode eignet sich für die Implementierung von Sperren. Klassen in .NET Framework, z. B. <xref:System.Threading.Monitor> und <xref:System.Threading.ReaderWriterLock>, verwenden Sie diese Methode intern. <xref:System.Threading.Thread.SpinWait%2A> setzt im Wesentlichen den Prozessor in einer sehr kurzen Schleife mit der Zahl der Schleifen, die gemäß der `iterations` Parameter. Die Dauer des Wartevorgangs hängt daher von der Geschwindigkeit des Prozessors.  
+ Die <xref:System.Threading.Thread.SpinWait%2A> Methode eignet sich für die Implementierung von Sperren. Klassen in .NET Framework, z. B. <xref:System.Threading.Monitor> und <xref:System.Threading.ReaderWriterLock>, verwenden Sie diese Methode intern. <xref:System.Threading.Thread.SpinWait%2A> setzt im Wesentlichen den Prozessor in einer sehr kurzen Schleife mit der Zahl der Schleifen, die gemäß der `iterations` Parameter. Die Dauer des Wartevorgangs hängt daher von der Geschwindigkeit des Prozessors ab.  
   
  Vergleichen Sie dies mit der <xref:System.Threading.Thread.Sleep%2A> Methode. Ein Thread, der Aufrufe <xref:System.Threading.Thread.Sleep%2A> führt zu den Rest der seiner aktuellen Segment der Prozessorzeit, selbst wenn das angegebene Intervall auf 0 (null) ist. Angeben eines Intervalls ungleich NULL für <xref:System.Threading.Thread.Sleep%2A> unberücksichtigt bleiben sollen, durch den Threadplaner den Thread entfernt, bis das Zeitintervall verstrichen ist.  
   
